@@ -16,11 +16,27 @@ Role Variables
 
 Available variables are listed below, along with default values
 
-**webofmars_debian_xfce4_extra_packages**: []
-**webofmars_debian_xfce4_packages**: [ xserver-xorg, xfonts-base, lightdm, task-xfce-desktop ]
+**Debian**
 
-**webofmars_ubuntu_xfce4_extra_packages**: []
-**webofmars_ubuntu_xfce4_packages**: [ xserver-xorg, xfonts-base, lightdm, xubuntu-desktop ]
+```
+webofmars_debian_xfce4_extra_packages: []
+webofmars_debian_xfce4_packages:
+  - xserver-xorg
+  - xfonts-base
+  - lightdm
+  - task-xfce-desktop
+```
+
+**Ubuntu**
+
+```
+webofmars_ubuntu_xfce4_extra_packages: []
+webofmars_ubuntu_xfce4_packages:
+- xserver-xorg
+- xfonts-base
+- lightdm
+- xubuntu-desktop
+```
 
 Dependencies
 ------------
