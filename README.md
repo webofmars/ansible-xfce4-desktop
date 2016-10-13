@@ -19,8 +19,8 @@ Available variables are listed below, along with default values
 **Debian**
 
 ```
-webofmars_debian_xfce4_extra_packages: []
-webofmars_debian_xfce4_packages:
+xfce4_debian_extra_packages: []
+xfce4_debian_packages:
   - xserver-xorg
   - xfonts-base
   - lightdm
@@ -30,8 +30,8 @@ webofmars_debian_xfce4_packages:
 **Ubuntu**
 
 ```
-webofmars_ubuntu_xfce4_extra_packages: []
-webofmars_ubuntu_xfce4_packages:
+xfce4_ubuntu_extra_packages: []
+xfce4_ubuntu_packages:
 - xserver-xorg
 - xfonts-base
 - lightdm
