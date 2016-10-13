@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-xfce4-desktop
+    - ansible-xfce4-desktop

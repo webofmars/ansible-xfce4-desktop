@@ -1,7 +1,7 @@
 Ansible Role: xfce4-desktop
 =====================
 
-Build status for this role: [![Build Status](https://travis-ci.org/PeterMosmans/ansible-role-virtualbox-guest.svg)](https://travis-ci.org/PeterMosmans/ansible-role-virtualbox-guest)
+Build status for this role: [![Build Status](https://travis-ci.org/webofmars/ansible-xfce4-desktop.svg?branch=master)](https://travis-ci.org/webofmars/ansible-xfce4-desktop.svg?branch=master)
 
 
 This role installs and configures Xfce4 Desktop on Ubuntu and Debian platforms
