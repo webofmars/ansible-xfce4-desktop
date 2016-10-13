@@ -1,7 +1,7 @@
 - apt: name="{{ item }}" state={{ present }}
-  whith_items: {{ webofmars_ubuntu_xfc4_packages }}
+  whith_items: "{{ webofmars_ubuntu_xfc4_packages }}"
   notify: "restart lightdm"
 
 - apt: name="{{ item }}" state={{ present }}
-  whith_items: {{ webofmars_ubuntu_xfc4_extra_packages }}
+  whith_items: "{{ webofmars_ubuntu_xfc4_extra_packages }}"
   notify: "restart lightdm"
