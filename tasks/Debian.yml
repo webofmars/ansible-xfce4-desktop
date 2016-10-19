@@ -1,7 +1,10 @@
-- apt: name="{{ item }}" state="present"
+- name: install xfce4 minimal packages
+  apt: name="{{ item }}" state="present"
   with_items: "{{ xfce4_debian_packages }}"
-  notify: "restart lightdm"
 
-- apt: name="{{ item }}" state="present"
+- name: install xfce4 extra packages
+  apt: name="{{ item }}" state="present"
   with_items: "{{ xfce4_debian_extra_packages }}"
-  notify: "restart lightdm"
+
+- name: restart lightdm service
+  service: name="lightdm" state="restarted"
