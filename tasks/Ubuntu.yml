@@ -7,4 +7,4 @@
   with_items: "{{ xfce4_ubuntu_extra_packages }}"
 
 - name: restart lightdm service
-  service: name="lightdm" state="restarted"
+  service: name="{{ xfce4_login_manager }}" state="restarted"
