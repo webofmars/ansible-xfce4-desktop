@@ -19,7 +19,7 @@ Available variables are listed below, along with default values
 **Debian**
 
 ```
-xfce4_login_manager: gdm
+xfce4_login_manager: gdm3
 xfce4_debian_extra_packages: []
 xfce4_debian_packages:
   - xserver-xorg
