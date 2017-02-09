@@ -19,13 +19,12 @@ Available variables are listed below, along with default values
 **Debian**
 
 ```
-xfce4_login_manager: gdm3
 xfce4_debian_extra_packages: []
 xfce4_debian_packages:
   - xserver-xorg
   - xfonts-base
   - task-xfce-desktop
-  - {{ xfce4_login_manager }}
+  - gdm3
 ```
 
 **Ubuntu**
@@ -36,7 +35,7 @@ xfce4_ubuntu_packages:
 - xserver-xorg
 - xfonts-base
 - xubuntu-desktop
-- {{ xfce4_login_manager }}
+- gdm
 ```
 
 Dependencies

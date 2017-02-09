@@ -1,13 +1,17 @@
-xfce4_login_manager: gdm3
+# debian
 xfce4_debian_packages:
   - xserver-xorg
   - xfonts-base
   - task-xfce-desktop
-  - "{{ xfce4_login_manager }}"
+  - gdm3
 xfce4_debian_extra_packages: []
+
+# ubuntu
 xfce4_ubuntu_packages:
   - xserver-xorg
   - xfonts-base
   - xubuntu-desktop
-  - "{{ xfce4_login_manager }}"
+  - gdm
 xfce4_ubuntu_extra_packages: []
+
+# TODO: this should be merged in one list using macros
