@@ -24,9 +24,8 @@ xfce4_packages:
   - xfonts-base
   - task-xfce-desktop
 
-xfce4_login_manager:
-  - gdm3
-
+xfce4_login_manager_package: gdm3
+xfce4_login_manager_service: gdm
 xfce4_extra_packages: []
 ```
 
@@ -38,9 +37,8 @@ xfce4_packages:
   - xfonts-base
   - xubuntu-desktop
 
-xfce4_login_manager:
-  - gdm
-
+xfce4_login_manager_package: gdm
+xfce4_login_manager_service: gdm
 xfce4_extra_packages: []
 ```
 

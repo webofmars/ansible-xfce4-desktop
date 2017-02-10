@@ -1,10 +1,21 @@
+- name: include variables for Debian platform
+  include_vars: Debian.yml
+  when: ansible_distribution == "Debian"
+
+- name: include variables for Ubuntu platform
+  include_vars: Ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+
 - name: install xfce4 minimal packages
   apt: name="{{ item }}" state="present"
-  with_items: "{{ xfce4_packages }}"
+  with_items: 
+    - "{{ xfce4_packages }}"
+    - "{{ xfce4_login_manager_package }}"
 
 - name: install xfce4 extra packages
   apt: name="{{ item }}" state="present"
-  with_items: "{{ xfce4_extra_packages }}"
+  with_items: 
+    - "{{ xfce4_extra_packages }}"
 
 - name: restart login manager service
-  service: name="{{ xfce4_login_manager }}" state="restarted"
+  service: name="{{ xfce4_login_manager_service }}" state="restarted"
