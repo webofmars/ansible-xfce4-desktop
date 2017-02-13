@@ -1,8 +1,8 @@
 xfce4_packages:
   - xserver-xorg
   - xfonts-base
-  - task-xfce-desktop
- 
+  - xubuntu-desktop 
+
 xfce4_login_manager_package: gdm
 xfce4_login_manager_service: gdm
 
